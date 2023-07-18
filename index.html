@@ -1,0 +1,40 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+  <meta charset="utf-8">
+  <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="main.css">
+  <title>電卓</title>
+ </head>
+ 
+ <body>
+ <div class="container">
+  <div class="calculator">
+   <div class="display">
+    <input type="text" id="result" placeholder="0" disabled>
+   </div>
+   <div class="keypad">
+   	<button id=sevenButton onclick="pushNumber('7')">７</button>
+   	<button id=eightButton onclick="pushNumber('8')">８</button>
+	   <button id=nineButton onclick="pushNumber('9')">９</button>
+   	<button id=plusButton onclick="pushOperator1('+')">＋</button>
+	   <button id=fourButton onclick="pushNumber('4')">４</button>
+	   <button id=fiveButton onclick="pushNumber('5')">５</button>
+	   <button id=sixButton onclick="pushNumber('6')">６</button>
+	   <button id=minusButton onclick="pushOperator1('-')">－</button>
+	   <button id=oneButton onclick="pushNumber('1')">１</button>
+	   <button id=twoButton onclick="pushNumber('2')">２</button>
+	   <button id=threeButton onclick="pushNumber('3')">３</button>
+	   <button id=timesButton onclick="pushOperator2('*')"disabled>＊</button>
+	   <button id=zeroButton onclick="pushZero('0')">０</button>
+	   <button id=zerozeroButton onclick="pushZeroZero('00')">００</button>
+	   <button id=commaButton onclick="pushComma('.')">.</button>
+    <button id=dividedButton onclick="pushOperator2('/')"disabled>／</button>
+    <button class=allclear onclick="clearResult()">AC</button>
+    <button class=equal onclick="calculateResult()">=</button>
+   </div>
+  </div>
+ </div>
+ <script src="main.js"></script>
+</body>
+</html>
